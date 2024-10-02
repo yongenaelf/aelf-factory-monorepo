@@ -1,0 +1,19 @@
+{
+  "name": "@yongenaelf/protobuf-generator-ts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/protobuf-generator-ts/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/protobuf-generator-ts",
+        "main": "packages/protobuf-generator-ts/src/index.ts",
+        "tsConfig": "packages/protobuf-generator-ts/tsconfig.lib.json",
+        "assets": ["packages/protobuf-generator-ts/*.md"]
+      }
+    }
+  }
+}
